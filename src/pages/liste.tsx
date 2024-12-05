@@ -2,6 +2,8 @@ import React from "react";
 import ListCard from "../components/ListCard"; // Assure-toi que le chemin est correct
 import { Button } from "@/components/ui/button"; // Assure-toi que le chemin est correct
 import { List } from "lucide-react"; // Si tu as besoin de cette icône, sinon tu peux l'enlever
+import Layout from "./layout";
+import Navbar from "@/components/navbar";
 
 interface Card {
   id: number;
@@ -18,7 +20,10 @@ const Liste: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col h-full p-4">
+    
+     <Layout>
+  
+    <div className="flex flex-col h-full p-12 ">
       <div className="flex flex-grow gap-4 overflow-auto">
         {lists.map((list) => (
           <div
@@ -33,10 +38,15 @@ const Liste: React.FC = () => {
               ))}
               <Button className="mt-2">+ Add a card</Button> {/* Bouton pour ajouter une carte */}
             </div>
+            
           </div>
+    
         ))}
       </div>
+      
     </div>
+    </Layout>
+    
   );
 };
 

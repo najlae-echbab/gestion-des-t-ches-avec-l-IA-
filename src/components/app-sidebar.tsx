@@ -17,7 +17,7 @@ import {
 const items = [
   {
     title: "Boards",
-    url: "#",
+    url: "http://localhost:5173/Home",
     icon:ChartNoAxesColumnDecreasing,
   },
   {
@@ -49,7 +49,7 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar >
+    <Sidebar collapsible="icon" >
       <SidebarContent >
         <SidebarGroup >
           <SidebarGroupLabel className="max-w-lg text-3xl font-semibold leading-normal text-gray-900 dark:text-white">Application</SidebarGroupLabel>

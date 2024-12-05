@@ -9,6 +9,7 @@
     }
   ],
   "compilerOptions": {
+    "lib": ["es2017", "dom"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
@@ -17,4 +18,5 @@
     "jsx": "react",
       "esModuleInterop": true
   }
+  
 }
