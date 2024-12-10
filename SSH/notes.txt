@@ -1,0 +1,7 @@
+structure des dossier (séparé)
+Les noms des div dans HTML doivent être "meanenful"
+remplacer le div de head par header
+utiliser les balise qui devise la page de html : header, footer, side ...
+ajouter l'alternatif (alt) pour les images
+éviter de fixer le width (remplacer par max width et min width !) 
+fontawsome (pour fléches)

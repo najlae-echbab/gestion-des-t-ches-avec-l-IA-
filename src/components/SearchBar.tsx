@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../index.css";
 const SearchForm: React.FC = () => {
   return (
     <form className="max-w-md mx-auto">
@@ -36,7 +36,7 @@ const SearchForm: React.FC = () => {
         />
         <button
           type="submit"
-          className="text-white absolute end-2.5 bottom-2.5 bg-[#64748b] hover:bg-[#94a3b8] focus:ring-4 focus:outline-none focus:ring-[#1E2A5E] font-medium rounded-lg text-sm px-4 py-2 dark:bg-[#1E2A5E] dark:hover:bg-[#1E2A5E] dark:focus:ring-[#1E2A5E]"
+          className="text-white absolute end-2.5 bottom-2.5 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 focus:ring-4 focus:outline-none focus:ring-[#1E2A5E] font-medium rounded-lg text-sm px-4 py-2 "
           >
           Search
         </button>

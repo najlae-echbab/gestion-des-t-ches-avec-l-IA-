@@ -5,6 +5,8 @@ import { Sidebar } from './components/ui/sidebar'; // Assure-toi que le chemin e
 import { Home } from 'lucide-react';
 import AppRouter from "@/AppRouter"; // Assure-toi que le chemin est correct
 import "./index.css";
+import Connexion from './pages/Connexion';
+import SignUp from './pages/SingUp';
 
 // Fichier principal de l'application
 const App: React.FC = () => {
@@ -14,14 +16,20 @@ const App: React.FC = () => {
       <Sidebar />
       <Navbar />
       {/* Contenu principal */}
+      
       <main>
         <Routes>
           {/* Définition des routes ici */}
           <Route path="/" element={<AppRouter />} />
           {/* Ajoute d'autres routes si nécessaire */}
+           {/* Route pour la page de connexion */}
+           <Route path="/connexion" element={<Connexion />} />
+           <Route path="/signup" element={<SignUp />} />
         </Routes>
+
       </main>
     </Router>
+    
   );
 };
 
