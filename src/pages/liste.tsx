@@ -22,6 +22,7 @@ const Liste: React.FC = () => {
   return (
     
      <Layout>
+      <Navbar />
   
     <div className="flex flex-col h-full p-12 ">
       <div className="flex flex-grow gap-4 overflow-auto">

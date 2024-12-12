@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <SidebarTrigger className="absolute left-4 top-0 z-[1000]" />
   </div>
   <div>
-      <Navbar />
+      
   </div>  
         <div>
         {children}

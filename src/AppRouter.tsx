@@ -8,6 +8,7 @@ import "tailwindcss/tailwind.css";
 import Connexion from './pages/Connexion';
 import SignUp from './pages/SingUp';
 import Search from './pages/search';
+import NewBoard from './pages/New_Board';
 const AppRouter: React.FC = () => {
   return ( 
     <Router>
@@ -18,6 +19,7 @@ const AppRouter: React.FC = () => {
 <Route path="/SignUp" element={<SignUp />} />
 <Route path="/" element={<Home />} />
 <Route path="/Search" element={<Search />} />
+<Route path="/New_Board" element={<NewBoard />} />  
       </Routes>
     </Router>
   );
