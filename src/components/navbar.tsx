@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
-
+import Logout from "../components/logout";
  
 
 const Navbar = () => {
@@ -28,13 +28,14 @@ const Navbar = () => {
           <SearchBar />
             {/* Partie gauche : bouton Sign Up */}
       </div>
-      <div>
+      <div ><Logout /></div>
+     {/*<div>
         <Link to="/connexion">
           <button className="bg-blue-950 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-900 transition duration-300 mt-1 top-1 text-sm">
             Sign Up
           </button>
         </Link>
-      </div>
+      </div>*/}
         
 
 </nav>
