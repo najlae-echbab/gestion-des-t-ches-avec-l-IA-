@@ -8,6 +8,7 @@ import "./index.css";
 import Connexion from './pages/Connexion';
 import SignUp from './pages/SingUp';
 
+
 // Fichier principal de l'application
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
            {/* Route pour la page de connexion */}
            <Route path="/connexion" element={<Connexion />} />
            <Route path="/signup" element={<SignUp />} />
+           
         </Routes>
 
       </main>

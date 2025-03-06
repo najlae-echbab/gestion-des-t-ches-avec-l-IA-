@@ -5,47 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import SignUpImage from "../assets/SignUp.png";
 import useAuth from "@/hooks/useAuth";
 
-/*const Connexion: React.FC = () => {
-  const [passwordVisible, setPasswordVisible] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const navigate = useNavigate();
-
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    const email = (document.getElementById("email") as HTMLInputElement).value;
-    const password = (document.getElementById("password") as HTMLInputElement).value;
-
-    if (!email || !password) {
-      setError("Both fields are required.");
-      return;
-    }
-
-    try {
-      const response = await fetch("http://localhost:8081/auth/authenticate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: email,
-          password: password,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Invalid credentials");
-      }
-
-      const data = await response.json();
-      const token = data.token;
-      localStorage.setItem("jwt", token);
-
-      navigate("/Home");
-    } catch (error) {
-      console.error("Authentication failed:", error);
-      setError("Authentication failed. Please check your credentials and try again.");
-    }
-  };*/
   const Connexion: React.FC = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

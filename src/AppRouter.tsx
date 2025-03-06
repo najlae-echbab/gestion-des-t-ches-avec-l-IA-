@@ -7,6 +7,8 @@ import SignUp from "./pages/SingUp";
 import Search from "./pages/Search";
 import NewBoard from "./pages/New_Board";
 import ProtectedRoutes from "./components/ProtectedRoute"; // Import du composant
+import Members from "./pages/members";
+import AddMember from './pages/AddMember';
 
 const AppRouter: React.FC = () => {
   return (
@@ -23,6 +25,8 @@ const AppRouter: React.FC = () => {
           <Route path="/tasks" element={<Liste />} />
           <Route path="/search" element={<Search />} />
           <Route path="/new_board" element={<NewBoard />} />
+          <Route path="/members" element={<Members />} />
+          <Route path="/AddMember" element={<AddMember />} />
         </Route>
       </Routes>
     </Router>

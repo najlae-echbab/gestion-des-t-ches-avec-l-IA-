@@ -13,7 +13,7 @@ const useAuth = () => {
         mutationFn: (credentials: loginCrendentials) => authService.login(credentials),
         onSuccess: (data) => {
             localStorage.setItem("jwt", data.token);// Sauvegarde du token JWT
-            navigate("/home");// Redirige après connexion réussie
+            navigate("/Home");
         },
         onError: (error) => {
             console.error("Authentication failed:", error);

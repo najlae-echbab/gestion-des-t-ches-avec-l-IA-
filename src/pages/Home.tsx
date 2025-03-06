@@ -58,7 +58,7 @@ const Home: React.FC = () => {
             <Card />
           </div>
           <div className="col-start-1 col-span-3 h-auto py-4">
-            <Component />
+          <Component />
           </div>
           <div className="h-auto py-16">
             <CalendarDemo />
