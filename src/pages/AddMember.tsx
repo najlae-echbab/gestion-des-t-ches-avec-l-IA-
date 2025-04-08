@@ -6,7 +6,7 @@ import "../index.css";
 
 const AddMember = () => {
   const [username, setUsername] = useState("");
-  const [roles, setRoles] = useState("");
+  const [roles,setRoles] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState(""); // Nouveau champ pour confirmer le mot de passe
   const [isModalOpen, setIsModalOpen] = useState(false); // État pour la popup de confirmation
@@ -57,20 +57,21 @@ const AddMember = () => {
 
     // Début de l'envoi des données (chargement)
     setIsLoading(true);
-
     try {
-      // Appel API pour ajouter un membre
-      const response = await axios.post("http://localhost:8081/api/members", newMember);
+      const response = await axios.post("http://localhost:8081/auth/register", newMember, {
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          withCredentials: true
+      });
 
       console.log("New Member Added:", response.data);
-      navigate("/members"); // Redirige vers la page des membres après l'ajout réussi
-    } catch (error) {
+      navigate("/members"); // Rediriger après succès
+  } catch (error) {
       console.error("There was an error adding the member:", error);
       setErrorMessage("An error occurred while adding the member. Please try again.");
-    } finally {
-      // Fin de l'envoi des données (chargement terminé)
-      setIsLoading(false);
-    }
+  }
   };
 
   return (
