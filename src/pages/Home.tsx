@@ -18,13 +18,15 @@ const Home: React.FC = () => {
   useEffect(() => {
     const loadProjects = async () => {
       try {
-        const projectsData = await fetchProjects(); // Utilisation de ta fonction d'API déjà définie
-        setProjects(projectsData);
+        const projectsData = await fetchProjects();
+        // Afficher seulement les 3 derniers projets
+        const lastThreeProjects = projectsData.slice(-3).reverse(); 
+        setProjects(lastThreeProjects);
       } catch (error) {
         setError("Erreur lors de la récupération des projets.");
       }
     };
-
+  
     loadProjects();
   }, []);
 

@@ -27,6 +27,7 @@ const AppRouter: React.FC = () => {
           <Route path="/new_board" element={<NewBoard />} />
           <Route path="/members" element={<Members />} />
           <Route path="/AddMember" element={<AddMember />} />
+          <Route path="/tasks/:projectId" element={<Liste />} />
         </Route>
       </Routes>
     </Router>
