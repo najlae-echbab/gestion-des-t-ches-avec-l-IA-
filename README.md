@@ -1,21 +1,41 @@
-# 🧠 Gestion des Tâches avec l'IA
+#  Frontend – Gestion des Tâches avec l'IA
 
-Une application web intelligente de gestion de projets. À partir d’une simple **description de projet**, l’IA génère automatiquement une liste de tâches, que l’utilisateur peut ensuite organiser, modifier ou compléter dans une interface **Kanban** intuitive.
+##  Présentation
 
-## ✨ Fonctionnalités
+Ce frontend est l’interface utilisateur de l'application **Gestion des Tâches avec l’IA**. Développée avec **React** et **TypeScript**, elle permet à chaque utilisateur :
 
-- 🧾 Génération automatique des tâches à partir d'une description
-- 🧠 Intégration avec OpenAI pour la création intelligente de tâches
-- 📌 Ajout, modification et suppression de tâches
-- 📊 Tableau Kanban pour organiser les tâches par statut (À faire, En cours, Terminé)
-- 🔄 Sauvegarde des projets et de leurs tâches
+- De se connecter et gérer plusieurs projets
+- De générer automatiquement des listes de tâches avec l’**API OpenAI**
+- D’organiser ces tâches dans une **interface Kanban fluide**, avec glisser-déposer
 
-## 🛠 Technologies utilisées
+L’interface est moderne, rapide (grâce à **Vite**) et responsive.
 
-- **Back-end :** Spring Boot (Java)
-- **Front-end :** React + TypeScript
-- **Base de données :** MySQL
-- **API IA :** OpenAI
-- **Librairies :** Axios, React Beautiful DnD, etc.
+---
 
+##  Technologies utilisées
 
+| Fonction                | Librairies / Technologies            |
+|------------------------|--------------------------------------|
+| Frontend               | React + TypeScript                   |
+| Bundler                | Vite                                 |
+| Requêtes API           | Axios                                |
+| Drag & Drop            | React Beautiful DnD                  |
+| Authentification       | JWT (stocké dans le localStorage)    |
+| CSS                    | TailwindCSS (ou CSS modules)         |
+| Environnement          | Variables via `.env`                 |
+
+---
+
+##  Configuration & Lancement
+
+### Prérequis
+
+- Node.js (v16+)
+- npm (ou yarn, ou pnpm)
+
+### Installation
+
+```bash
+git clone https://github.com/najlae-echbab/gestion-des-taches-avec-IA-front-end.git
+cd gestion-des-taches-avec-IA-front-end
+npm install
