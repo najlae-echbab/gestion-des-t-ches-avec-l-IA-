@@ -2,7 +2,7 @@
 
 ##  Présentation
 
-Ce frontend est l’interface utilisateur de l'application **Gestion des Tâches avec l’IA**. Développée avec **React** et **TypeScript**, elle permet à chaque utilisateur :
+Ce frontend est l’interface utilisateur de l'application **Gestion des Tâches avec l’IA**. Développée avec **React TypeScript**, elle permet à chaque utilisateur :
 
 - De se connecter et gérer plusieurs projets
 - De générer automatiquement des listes de tâches avec l’**API OpenAI**
